@@ -179,7 +179,7 @@ describe("Model Associations", () => {
     expect(cheeses[0].title).toBe("Cheddar");
   });
 
-  it("should associate a cheese with a board with a pivot table", async () => {
+  it("should associate a cheese with a board with a new table", async () => {
     const cheese = await Cheese.create({ title: "Cheddar", description: "A hard, aged cheese with a sharp, slightly nutty flavor." });
     const board = await Board.create({ type: "Cheese Board", description: "A wooden board used for serving cheese and crackers.", rating: 4 });
     await board.addCheese(cheese, { through: CheeseBoard });
