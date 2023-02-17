@@ -7,4 +7,4 @@ const Board = sequelize.define(Board,{
     rating: DataTypes.INTERGER
 });
 
-moduel,exports = Board;
+moduel.exports = Board;
