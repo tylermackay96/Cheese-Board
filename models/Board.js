@@ -1,5 +1,5 @@
 const { DataTypes } = require("sequelize");
-const sequelize = require("../db/connection.js");
+const sequelize = require("./connection.js");
 
 const Board = sequelize.define(Board,{
     type: DataTypes.STRING,

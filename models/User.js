@@ -1,5 +1,5 @@
 const { DataTypes } = require("sequelize");
-const sequelize = require("../db/connection.js");
+const sequelize = require("./connection.js");
 
 const User = sequelize.define(User,{
     name: DataTypes.STRING,
